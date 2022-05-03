@@ -20,13 +20,13 @@ class TransactionList extends StatelessWidget {
               return Column(
                 // ignore: prefer_const_literals_to_create_immutables
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
-                  Text(
+                  const Text(
                     "Nenhuma transação cadastrada!",
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   SizedBox(
@@ -73,13 +73,13 @@ class TransactionList extends StatelessWidget {
                     ),
                     trailing: MediaQuery.of(context).size.width < 400
                         ? IconButton(
-                            icon: Icon(Icons.delete),
+                            icon: const Icon(Icons.delete),
                             onPressed: () => deleteTx(tr.id),
                             color: Colors.grey,
                           )
                         : TextButton.icon(
-                            icon: Icon(Icons.delete),
-                            label: Text("Excluir"),
+                            icon: const Icon(Icons.delete),
+                            label: const Text("Excluir"),
                             onPressed: () => deleteTx(tr.id),
                           ),
                   ),

@@ -104,13 +104,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
     final PreferredSizeWidget appBar = Platform.isIOS
         ? CupertinoNavigationBar(
-            middle: Text("Despesas"),
+            middle: const Text("Despesas"),
             trailing: Row(
               mainAxisSize: MainAxisSize.min,
               children: actions,
             ),
           )
-        : AppBar(title: Text('Expenses'), actions: actions);
+        : AppBar(title: const Text('Expenses'), actions: actions);
 
     final availableHeight = MediaQuery.of(context).size.height -
         appBar.preferredSize.height -

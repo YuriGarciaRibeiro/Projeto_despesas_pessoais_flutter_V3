@@ -8,7 +8,12 @@ class graficBar extends StatelessWidget {
   final int index;
   final double percentage;
 
-  graficBar(this.value, this.groupedTransaction, this.index, this.percentage);
+  const graficBar(
+    this.value,
+    this.groupedTransaction,
+    this.index,
+    this.percentage,
+  );
 
   @override
   Widget build(BuildContext context) {
