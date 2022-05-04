@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class NoTransactions extends StatelessWidget {
-  BoxConstraints constraints;
+  final BoxConstraints constraints;
 
-  NoTransactions(this.constraints);
+  const NoTransactions(this.constraints);
 
   @override
   Widget build(BuildContext context) {

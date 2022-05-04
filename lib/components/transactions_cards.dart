@@ -6,7 +6,7 @@ class TrasactionsCards extends StatelessWidget {
   final Function deleteTx;
   final Transaction tr;
 
-  TrasactionsCards(this.deleteTx, this.tr);
+  const TrasactionsCards(this.deleteTx, this.tr);
 
   @override
   Widget build(BuildContext context) {
